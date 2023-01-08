@@ -1,0 +1,10 @@
+N = { E R T S F }
+E = { + '' * ( ) id }
+S = E
+P = {
+    E -> T R
+    R -> + T R | ''
+    T -> F S
+    S -> * F S | ''
+    F -> ( E ) | id
+}

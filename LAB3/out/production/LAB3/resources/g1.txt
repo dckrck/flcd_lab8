@@ -1,0 +1,10 @@
+N = { S A B C D }
+E = { + * not int return }
+S = S
+P = {
+    S -> A D
+    A -> int | not C | epsilon
+    B -> + S
+    C -> * A | epsilon
+    D -> return
+}

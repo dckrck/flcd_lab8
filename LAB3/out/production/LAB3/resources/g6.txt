@@ -1,0 +1,10 @@
+N = { T E’ F T’ E }
+E = { id + * ( ) }
+S = E
+P = {
+    E -> T E’
+    E’ -> + T E’ | epsilon
+    T -> F T’
+    T’ -> * F T’ | epsilon
+    F -> ( E ) | id
+}
